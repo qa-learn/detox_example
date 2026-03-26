@@ -1,0 +1,1 @@
+[{"uid":"a63a19d8274d4c10","name":"e2e/login.test.ts","time":{"start":1774528055337,"stop":1774528057651,"duration":2314},"status":"broken","severity":"normal"},{"uid":"ff1e905d8328a903","name":"e2e/securearea.test.ts","time":{"start":1774528047042,"stop":1774528055164,"duration":8122},"status":"broken","severity":"normal"}]

@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","8122","e2e/securearea.test.ts","","2026-03-26","broken","2026-03-26","","(test file execution)","",""
+"","2314","e2e/login.test.ts","","2026-03-26","broken","2026-03-26","","(test file execution)","",""
