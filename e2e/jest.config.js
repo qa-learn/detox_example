@@ -47,8 +47,10 @@ if (!isWindows && useAllure) {
 module.exports = {
   rootDir: path.resolve(__dirname, '..'),
   testMatch: [
-    '<rootDir>/e2e/login.test.ts',      // Run login first
-    '<rootDir>/e2e/securearea.test.ts', // Then secure area
+    '<rootDir>/e2e/tests/login.test.ts',      // Run login first
+    '<rootDir>/e2e/tests/securearea.test.ts', // Then secure area
+    '<rootDir>/e2e/tests/info.test.ts',
+    '<rootDir>/e2e/tests/profile.test.ts',
   ],
   testTimeout: 180000,
   detectOpenHandles: true,

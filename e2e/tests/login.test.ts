@@ -1,8 +1,8 @@
 import { device } from 'detox';
-import loginPage from './pages/login-page';
-import secureAreaPage from './pages/secure-area-page';
-import credentials from './data/credentials.json';
-import BasePage from './pages/base-page';
+import loginPage from '../pages/login-page';
+import secureAreaPage from '../pages/secure-area-page';
+import credentials from '../data/credentials.json';
+import BasePage from '../pages/base-page';
 
 describe('Login Flow: ', () => {
   beforeAll(async () => {

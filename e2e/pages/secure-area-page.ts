@@ -1,6 +1,8 @@
 import { element, by, waitFor } from 'detox';
 import BasePage from './base-page';
+import LoginPage from './login-page';
 import { TEN_SECONDS } from '../constants';
+import credentials from '../data/credentials.json';
 import messages from '../data/messages.json';
 
 class SecureAreaPage extends BasePage {
@@ -17,6 +19,12 @@ class SecureAreaPage extends BasePage {
   async waitToLoad() {
     this.log('\nSecureArea: Verifying Page is Loaded');
     await waitFor(element(this.heading)).toBeVisible().withTimeout(TEN_SECONDS);
+  }
+
+  async verifyLoggedInSuccessfully() {
+    await LoginPage.waitToLoad();
+    await LoginPage.loginAs(credentials.validUser.userName, credentials.validUser.password);
+    await this.waitToLoad();
   }
 
   async verifyHeading() {
