@@ -23,19 +23,15 @@ const InfoScreen: React.FC = () => {
         onPress={() => setIsExpanded(!isExpanded)}
         testID="show-info-button"
       >
-        <Text style={styles.buttonText}>Show Info</Text>
+        <Text style={styles.buttonText} testID="button-text">
+          {isExpanded ? 'Hide Info' : 'Show Info'}
+        </Text>
       </TouchableOpacity>
 
       {isExpanded && (
-        <View style={styles.infoContent} testID="info-details-text">
-          <Text style={styles.bodyText}>
-            This text is provided for testing purposes.
-            Do not ask to see the hidden meaning here.
-          </Text>
-          <Text style={styles.bodyText}>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident.
+        <View style={styles.infoContent} testID="info-details-view">
+          <Text style={styles.bodyText} testID="info-text">
+            This text is provided for testing purposes. Do not ask to see the hidden meaning here.
           </Text>
         </View>
       )}

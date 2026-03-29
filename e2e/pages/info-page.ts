@@ -5,7 +5,7 @@ import messages from '../data/messages.json';
 
 class InfoPage extends BasePage {
   private readonly heading = by.text('Information');
-  private readonly showInfoButton = by.id('toggle-info-button');
+  private readonly showInfoButton = by.id('show-info-button');
   private readonly showInfoButtonText = by.id('button-text');
   private readonly infoDetailsView = by.id('info-details-view');
   private readonly informationText = by.id('info-text');
@@ -32,7 +32,7 @@ class InfoPage extends BasePage {
     await this.verifyElementHasText(this.heading, InfoPage.headingText);
   }
 
-  async tapShowButton(){
+  async tapShowButton() {
       this.log(' * Tapping Show/Hide Button');
       await element(this.showInfoButton).tap();
   }
